@@ -4,15 +4,11 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"os"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	version := os.Getenv("version")
 
-	if version == "" {
-		version = "Unknow"
-	}
+	version := "v1.0.0"
 
 	fmt.Fprintf(w, "Hi there, Current version is %s!", version)
 }

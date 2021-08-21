@@ -8,7 +8,7 @@ import (
 
 func handler(w http.ResponseWriter, r *http.Request) {
 
-	version := "1.0.8"
+	version := "1.0.9"
 
 	fmt.Fprintf(w, "Hi there, Current version is %s!", version)
 }
